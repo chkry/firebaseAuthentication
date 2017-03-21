@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "184840986316",
+    "firebase_url": "https://fireapp-98563.firebaseio.com",
+    "project_id": "fireapp-98563",
+    "storage_bucket": "fireapp-98563.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184840986316:android:f97277eeeb2b85e1",
+        "android_client_info": {
+          "package_name": "com.chkry.fireauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184840986316-lqqj4hotaennvfj7uvs5d97q2a24ie5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdTQY0b2rNBkZjOyIByWpoVf9uthK-cHI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
