@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         pwd = (EditText)findViewById(R.id.password);
         mailid = (EditText)findViewById(R.id.email);
 
+
         mAuth = FirebaseAuth.getInstance();
 
 
@@ -48,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
-                    startActivity(new Intent(MainActivity.this,AccountActivity.class));
-
+                        startanact();
+                        MainActivity.this.finish();
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                 } else {
                     // User is signed out
@@ -75,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         mAuth.addAuthStateListener(mAuthListener);
+    }
+
+    private void startanact(){
+        startActivity(new Intent(MainActivity.this,AccountActivity.class));
     }
 
 

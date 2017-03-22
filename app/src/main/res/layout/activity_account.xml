@@ -7,19 +7,66 @@
     android:orientation="vertical"
     tools:context="com.chkry.fireauth.AccountActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGGED IN"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="127dp" />
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"/>
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message"/>
+        <Button
+            android:id="@+id/updatebutn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Update"
+            android:background="@color/colorPrimary"/>
 
-    <Button
-        android:id="@+id/logout"
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/valueid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="258dp" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22dp"
+        android:text="value"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGGED IN"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="127dp" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LogOut"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="258dp" />
+
+    </LinearLayout>
+
+
+
 </LinearLayout>
